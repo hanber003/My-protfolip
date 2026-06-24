@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="header">
+    <h1>Hossam Anbar</h1>
+    <a href="#">Home</a>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#contact">Contact</a>
+</div>
+
+<div class="section hero">
+    <img src="images/profile.png" alt="Profile Photo">
+    <h2>Hello, I'm Hossam Anbar</h2>
+    <h3>Multimedia Student</h3>
+    <p>
+        I am learning how to build simple websites
+        using HTML and CSS.
+    </p>
+</div>
+
+<div class="section" id="about">
+    <h2><span>&#128100;</span> About Me</h2>
+    <p>
+        I have a strong passion for multimedia and digital technologies, and I always strive to develop my skills in
+        design and creative production. I enjoy creating new ideas and transforming them into distinctive visual works
+        that reflect creativity and professionalism. I aspire to build a successful professional future that contributes
+        to developing digital content and keeping up with modern advancements. I love <strong>learning </strong> and
+        <mark> improving my creative skills</mark>
+        . I also use design thinking to develop better ideas.
+    </p>
+    <blockquote>
+        <span class="quote-icon">&#10077;</span> However difficult life may seem, there is always something you can do
+        and succeed at.
+    </blockquote>
+</div>
+
+<div class="section" id="skills">
+    <h2><span>&#9733;</span> My Skills</h2>
+
+    <div class="skill-item">
+        <span class="skill-name">HTML</span>
+        <div class="bar-container">
+            <div class="bar-fill html-fill"></div>
+        </div>
+        <span class="skill-percent">90%</span>
+    </div>
+
+    <div class="skill-item">
+        <div class="skill-name">CSS</div>
+        <div class="bar-container">
+            <div class="bar-fill css-fill"></div>
+        </div>
+        <div class="skill-percent">70%</div>
+    </div>
+
+    <div class="skill-item">
+        <div class="skill-name">Git & GitHub</div>
+        <div class="bar-container">
+            <div class="bar-fill github-fill"></div>
+        </div>
+        <div class="skill-percent">75%</div>
+    </div>
+</div>
+
+<div class="section" id="projects">
+    <h2><span>&#128188;</span> My Projects</h2>
+
+    <div class="project-box">
+        <h3>Personal Website</h3>
+        <p>A simple personal website built with HTML and CSS.</p>
+        <a href="https://github.com/hanber003/my-cv.git" target="_blank">View Project</a>
+    </div>
+
+    <div class="project-box">
+        <h3>Support Project</h3>
+        <p>A technical support web page built for practice.</p>
+        <a href="https://github.com/hanber003/support.git" target="_blank">View Project</a>
+    </div>
+</div>
+
+<div class="section" id="contact">
+    <h2><span>&#9993;</span> Contact Me</h2>
+    <form>
+        <div class="row">
+            <div class="field half">
+                <label for="name">Your Name</label>
+                <input type="text" id="name" placeholder="Your Name">
+            </div>
+            <div class="field half">
+                <label for="email">Your Email</label>
+                <input type="email" id="email" placeholder="Your Email">
+            </div>
+        </div>
+
+        <div class="field full">
+            <label for="subject">Subject</label>
+            <input type="text" id="subject" placeholder="Subject">
+        </div>
+
+        <div class="field full">
+            <label for="message">Your Message</label>
+            <textarea id="message" rows="5" placeholder="Your Message"></textarea>
+        </div>
+
+        <button type="submit">Send Message</button>
+    </form>
+</div>
+
+<div class="footer" id="footer">
+    <p>&copy; 2026 Hossam Anbar. All rights reserved.</p>
+</div>
+
+</body>
+</html>

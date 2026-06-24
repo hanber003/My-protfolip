@@ -1,0 +1,221 @@
+body {
+background-color: #f4f7fb;
+color: #102040;
+font-family: Arial, sans-serif;
+text-align: center;
+margin: 0; }
+
+/* Header style */
+.header {
+background-color: #3157c9;
+color: white;
+padding: 25px; }
+
+.header h1 {
+font-size: 36px; }
+
+.header a {
+color: white;
+margin: 10px;
+text-decoration: none; }
+
+/* General section style */
+.section {
+background-color: white;
+padding: 30px;
+margin: 15px;
+border: 1px solid #d9e2f3;
+border-radius: 12px; }
+
+/* Hero section */
+.hero img {
+width: 150px;
+border-radius: 50%; }
+
+.hero h2 {
+font-size: 30px;
+color: #102040; }
+
+.hero h3 {
+color: #3157c9; }
+
+/* ================= كمل من هنا بقية الستايل المطور ================= */
+
+/* إلغاء الهايلايت الأصفر عن وسم mark برمجياً مع الحفاظ عليه للدرجات */
+mark {
+    background-color: transparent;
+    color: inherit;
+    font-weight: normal;
+    padding: 0;
+}
+
+/* إخفاء الليبل الخارجي بناءً على طلبك مع الحفاظ عليه في الهيكل للدكتور */
+label {
+    display: none;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #d9e2f3;
+    border-radius: 6px;
+    box-sizing: border-box; /* تمنع خروج الحقول عن البوكس وتضمن المقاسات */
+    font-size: 14px;
+}
+
+/* ================= ID Selectors (توزيع ألوان الأقسام المعتمد) ================= */
+
+/* --- قسم About Me (أخضر) --- */
+#about {
+    background-color: #e8f5e9;
+}
+#about h2 {
+    color: #2e7d32;
+}
+#about p {
+    color: #000000;
+}
+#about blockquote {
+    background-color: #c8e6c9; /* بوكس اقتباس أغمق قليلاً من الخلفية الخضراء */
+    padding: 15px;
+    border-radius: 8px;
+    margin: 15px auto;
+    width: 80%;
+    font-style: italic;
+    color: #000000;
+}
+#about .quote-icon {
+    color: #2e7d32;
+    font-size: 18px;
+}
+
+/* --- قسم My Skills (برتقالي) --- */
+#skills {
+    background-color: #fff3e0;
+}
+#skills h2 {
+    color: #ef6c00;
+}
+#skills .skill-item {
+    color: #000000;
+}
+
+/* --- قسم My Projects (بنفسجي فاتح) --- */
+#projects {
+    background-color: #f3e5f5;
+}
+#projects h2 {
+    color: #6a1b9a;
+}
+
+/* --- قسم Contact Me (أحمر فاتح) --- */
+#contact {
+    background-color: #ffebee;
+}
+#contact h2 {
+    color: #c62828;
+}
+#contact button {
+    background-color: #c62828; /* زر الإرسال أحمر غامق ممتد */
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+/* --- الفوتر بالأسفل (نفس أزرق الدكتور) --- */
+#footer {
+    background-color: #3157c9;
+    color: white;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+/* ================= Class Selectors (تنظيم الهياكل الداخلية) ================= */
+.skill-item {
+    width: 80%;
+    margin: 15px auto;
+    text-align: left;
+}
+
+.skill-name {
+    display: inline-block;
+    width: 25%;
+    font-weight: bold;
+    vertical-align: middle;
+}
+
+.bar-container {
+    display: inline-block;
+    width: 55%;
+    height: 16px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    vertical-align: middle;
+}
+
+.bar-fill {
+    height: 100%;
+    background-color: #ef6c00; /* تعبئة البار بالبرتقالي الغامق */
+    border-radius: 8px;
+}
+
+.html-fill { width: 90%; }
+.css-fill { width: 70%; }
+.github-fill { width: 75%; }
+
+.skill-percent {
+    display: inline-block;
+    width: 15%;
+    text-align: right;
+    vertical-align: middle;
+    font-weight: bold;
+}
+
+.project-box {
+    background-color: #ffffff;
+    border: 1px solid #d1c4e9;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 15px auto;
+    width: 80%;
+    text-align: left;
+}
+
+.project-box h3 {
+    margin-top: 0;
+    color: #6a1b9a;
+}
+
+.project-box a {
+    color: #6a1b9a;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+/* ترتيب الحقول المطور والآمن بدون Flexbox */
+.row {
+    width: 100%;
+    text-align: left;
+}
+
+.field {
+    margin-bottom: 15px;
+    box-sizing: border-box;
+}
+
+/* الحقلين الأول والثاني جنب بعض */
+.field.half {
+    display: inline-block;
+    width: 49%; /* نسبة آمنة تمنع النزول لسطر جديد */
+    vertical-align: top;
+}
+
+/* الحقل الثالث والرابع تحتهم */
+.field.full {
+    display: block;
+    width: 100%;
+}
